@@ -33,7 +33,7 @@ namespace ado_dot_net
                 string str = "select * from employee where Id=@id";
                 cmd = new SqlCommand(str, con);
                 cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtid.Text));
-                cmd.Parameters.AddWithValue("@name", (textBox2.Text));
+                cmd.Parameters.AddWithValue("@name", (txtemployeename.Text));
                 cmd.Parameters.AddWithValue("@salary", Convert.ToDouble(txtsalary.Text));
                 //open database connection//
                 con.Open();
@@ -43,7 +43,7 @@ namespace ado_dot_net
                 {
                     if (dr.Read()) //read the data from dr//
                     {
-                        textBox2.Text = dr["name"].ToString();
+                        txtemployeename.Text = dr["name"].ToString();
                         txtsalary.Text = dr["salary"].ToString();
                     }
                 }
@@ -71,7 +71,7 @@ namespace ado_dot_net
                 string str = "insert into employee values(@id,@name,@salary)";
                 cmd = new SqlCommand(str, con);
                 cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtid.Text));
-                cmd.Parameters.AddWithValue("@name", (textBox2.Text));
+                cmd.Parameters.AddWithValue("@name", (txtemployeename.Text));
                 cmd.Parameters.AddWithValue("@salary", Convert.ToDouble(txtsalary.Text));
                 //open database connection//
                 con.Open();
@@ -107,7 +107,7 @@ namespace ado_dot_net
                 string str = "update employee set Name=@name,Salary=@salary where Id=@id";
                 cmd = new SqlCommand(str, con);
                 cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtid.Text));
-                cmd.Parameters.AddWithValue("@name", (textBox2.Text));
+                cmd.Parameters.AddWithValue("@name", (txtemployeename.Text));
                 cmd.Parameters.AddWithValue("@salary", Convert.ToDouble(txtsalary.Text));
                 //open database connection//
                 con.Open();

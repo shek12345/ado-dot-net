@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtsalary = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtemployeename = new System.Windows.Forms.TextBox();
             this.txtid = new System.Windows.Forms.TextBox();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btnsearch = new System.Windows.Forms.Button();
@@ -97,12 +97,12 @@
             this.txtsalary.Size = new System.Drawing.Size(100, 20);
             this.txtsalary.TabIndex = 5;
             // 
-            // textBox2
+            // txtemployeename
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 85);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtemployeename.Location = new System.Drawing.Point(155, 85);
+            this.txtemployeename.Name = "txtemployeename";
+            this.txtemployeename.Size = new System.Drawing.Size(100, 20);
+            this.txtemployeename.TabIndex = 6;
             // 
             // txtid
             // 
@@ -171,7 +171,7 @@
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.txtid);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtemployeename);
             this.Controls.Add(this.txtsalary);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -194,7 +194,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtsalary;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtemployeename;
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btnsearch;
